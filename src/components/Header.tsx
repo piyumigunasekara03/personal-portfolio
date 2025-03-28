@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Header = () => {
   return (
-    <header id="home" className="min-h-screen flex items-center bg-gradient-to-br from-purple-50 to-white">
+    <header id="home" className="min-h-screen flex items-center bg-gradient-to-br from-purple-100 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
