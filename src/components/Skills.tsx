@@ -36,7 +36,6 @@ const SkillCircle = ({ skill, percentage, logo }: { skill: string; percentage: n
         </div>
       </div>
       <span className="mt-2 font-medium text-gray-700 dark:text-gray-200">{skill}</span>
-      <span className="text-sm text-gray-500 dark:text-gray-400">{percentage}%</span>
     </div>
   );
 };
