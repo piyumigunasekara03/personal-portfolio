@@ -5,27 +5,27 @@ const Projects = () => {
   const projects = [
     {
       title: "Air Travel Assistant app",
-      description: "Built a smart air travel assistant for Sri Lankan travelers using Flutter, Firebase, and Kotlin, with flight tracking, document upload, and transport assist.",
+      description: "Built a smart air travel assistant for Sri Lankan travelers using Flutter, and Firebase with flight tracking, document upload, and transport assist.",
       image: "/Jetsetgo.png",
-      link: "#"
+      link: "https://github.com/CREW-72/jet-set-go"
     },
     {
       title: "Marketing Website of JetSetGo",
       description: "Designed and developed the marketing website for the smart air travel assistant app using React, TypeScript, and Tailwind CSS. Focused on performance, accessibility, and user experience while ensuring a modern and responsive design. Collaborated via GitHub for verson control and team coordination.",
       image: "/website.png",
-      link: "#"
+      link: "https://jetsetgo-kappa.vercel.app/"
     },
     {
       title: "Company Website of IOT Solutions Pvt Ltd",
       description: "Contributed to designing the company website using Figma, developed the frontend with React and frameworks, integrated UI components, implemented responsive design, and collaborated via GitHub for version control.",
       image: "/iot.png",
-      link: "#"
+      link: "https://www.figma.com/proto/Gj5CGm5XqKseW444OG2Ugf/IOT-Web?page-id=0%3A1&node-id=1-2&viewport=492%2C-39%2C0.25&t=6Qw19Dh2TNmTgGDZ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2"
     },
     {
       title: "Real-Time Ticketing System with Producer Consumer model",
       description: "Developed a Real-Time Event Ticketing System with a producer-consumer model, using React for the frontend, Node.js for the backend, Java for the GUI, and GitHub for version control.",
       image: "/ticketing.jpg",
-      link: "#"
+      link: "https://github.com/piyumigunasekara03/ticketing-system.git"
     },
     {
       title: "Plane Seat Management System",
