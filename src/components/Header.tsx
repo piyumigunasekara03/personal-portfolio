@@ -3,28 +3,42 @@ import { ArrowRight } from 'lucide-react';
 
 const Header = () => {
   return (
-    <header id="home" className="min-h-screen flex items-center bg-gradient-to-br from-purple-100 to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Hi, I'm <span className="text-purple-600">Piyumi Gunasekara</span>
-            </h1>
-            <p className="text-xl text-gray-600 mb-8">
-            Blending aesthetics and functionality to create impactful digital interfaces
-            </p>
-            <a
-              href="#contact"
-              className="inline-flex items-center px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors"
-            >
-              Download Resume <ArrowRight className="ml-2" size={20} />
-            </a>
+    <header 
+      id="home" 
+      className="min-h-screen flex items-center justify-end relative bg-cover bg-center" 
+      style={{ backgroundImage: 'url(/background.png)' }} // Ensure the path is correct
+    >
+      {/* Semi-transparent overlay with backdrop blur */}
+      <div className="absolute inset-0 bg-black opacity-30 backdrop-blur-lg"></div> {/* Added backdrop blur to the overlay */}
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-10">
+        <div className="grid md:grid-cols-2 gap-12 items-center justify-end">
+          {/* Left Side Content */}
+          <div className="flex items-center space-x-8 ml-12"> {/* Added margin-left to shift content right */}
+            {/* Logo with increased size and moved up */}
+            <img 
+              src="/icon.png" 
+              alt="Logo" 
+              className="h-24 w-24 rounded-full -mt-12 shadow-xl" // Added shadow to the logo
+            />
+            
+            {/* Name and Tagline */}
+            <div>
+              <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 "> {/* Added shadow to the text */}
+                Hi, I'm <span className="text-purple-600">Piyumi Gunasekara</span>
+              </h1>
+              <p className="text-2xl font-bold text-2xl font-[Arial, sans-serif] text-black"> {/* Added shadow to the text */}
+                Blending aesthetics and functionality to create impactful digital interfaces
+              </p>
+            </div>
           </div>
+
+          {/* Right Side Image (Profile Picture) */}
           <div className="relative">
             <img
               src="/profilepic.png"
               alt="Designer workspace"
-              className="rounded-lg shadow-2xl w-100 h-100 object-cover"
+              className="rounded-full shadow-2xl w-96 h-96 object-contain transform scale-105" // Slight zoom in with scale-105 and shadow
             />
           </div>
         </div>
@@ -34,3 +48,5 @@ const Header = () => {
 };
 
 export default Header;
+
+

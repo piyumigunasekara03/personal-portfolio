@@ -5,12 +5,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full bg-white bg-opacity-50 backdrop-blur-sm shadow-md z-50">
+    <nav className="fixed w-full bg-white bg-opacity-30 backdrop-blur-sm shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <div className="flex items-center">
-            <span className="text-2xl font-bold text-purple-600">Portfolio</span>
-          </div>
+        <div className="flex items-center space-x-3">
+  <img src="/icon.png" alt="Logo" className="h-10 w-10 rounded-full" />
+  <span className="text-2xl font-bold text-purple-600">Portfolio</span>
+</div>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
