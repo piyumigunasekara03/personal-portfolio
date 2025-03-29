@@ -23,10 +23,10 @@ const Footer = () => {
             <a href="https://github.com/piyumigunasekara03" className="text-gray-400 hover:text-purple-400 transition-colors">
               <Github size={24} />
             </a>
-            <a href="https://www.linkedin.com/in/piyumigunasekara-613123293" className="text-gray-400 hover:text-purple-400 transition-colors">
+            <a href="https://www.linkedin.com/in/piyumi-gunasekara-613123293/" className="text-gray-400 hover:text-purple-400 transition-colors">
               <Linkedin size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+            <a href="https://www.instagram.com/piyumiii_g/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D#" className="text-gray-400 hover:text-purple-400 transition-colors">
               <Instagram size={24} />
             </a>
           </div>
