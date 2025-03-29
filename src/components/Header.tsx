@@ -16,25 +16,25 @@ const Header = () => {
           {/* Left Side Content */}
           <div className="flex items-center space-x-8 ml-12"> {/* Added margin-left to shift content right */}
             {/* Logo with increased size and moved up */}
-            <img 
+            {/* <img 
               src="/icon.png" 
               alt="Logo" 
               className="h-24 w-24 rounded-full -mt-12 shadow-xl" // Added shadow to the logo
-            />
+            /> */}
             
             {/* Name and Tagline */}
-            <div>
-              <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 "> {/* Added shadow to the text */}
-                Hi, I'm <span className="text-[#4500cd]">Piyumi Gunasekara</span>
-              </h1>
-              <p className="text-2xl font-bold text-2xl font-[Arial, sans-serif] text-black"> {/* Added shadow to the text */}
-                Blending aesthetics and functionality to create impactful digital interfaces
-              </p>
+            <div className='-mt-16'>
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4"> 
+  Hi, I'm <span className="text-purple-600">Piyumi Gunasekara</span>
+</h1>
+<p className="text-2xl font-bold font-[Arial, sans-serif] text-black">
+  Blending aesthetics and functionality to create impactful digital interfaces
+</p>
             </div>
           </div>
 
           {/* Right Side Image (Profile Picture) */}
-          <div className="relative">
+          <div className="relative -mt-6 ml-6">
             <img
               src="/profilepic.png"
               alt="Designer workspace"
@@ -48,5 +48,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
