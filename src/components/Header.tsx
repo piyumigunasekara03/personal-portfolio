@@ -25,7 +25,7 @@ const Header = () => {
             {/* Name and Tagline */}
             <div>
               <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 "> {/* Added shadow to the text */}
-                Hi, I'm <span className="text-purple-600">Piyumi Gunasekara</span>
+                Hi, I'm <span className="text-[#4500cd]">Piyumi Gunasekara</span>
               </h1>
               <p className="text-2xl font-bold text-2xl font-[Arial, sans-serif] text-black"> {/* Added shadow to the text */}
                 Blending aesthetics and functionality to create impactful digital interfaces
