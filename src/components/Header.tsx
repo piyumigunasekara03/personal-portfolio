@@ -16,9 +16,16 @@ const Header = () => {
               <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-4"> 
                 Hi, I'm <span className="text-purple-600 dark:text-purple-400">Piyumi Gunasekara</span>
               </h1>
-              <p className="text-2xl font-bold font-[Arial, sans-serif] text-black dark:text-gray-200">
+              <p className="text-2xl font-bold font-[Arial, sans-serif] text-black dark:text-gray-200 mb-8">
                 Blending aesthetics and functionality to create impactful digital interfaces
               </p>
+              <a
+                href="/Resume.pdf"
+                download
+                className="inline-flex items-center px-6 py-3 bg-purple-600 dark:bg-purple-500 text-white rounded-lg hover:bg-purple-700 dark:hover:bg-purple-600 transition-colors shadow-lg hover:shadow-xl"
+              >
+                Download Resume
+              </a>
             </div>
           </div>
 
