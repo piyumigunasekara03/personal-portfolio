@@ -6,36 +6,42 @@ const Projects = () => {
     {
       title: "Air Travel Assistant app",
       description: "Built a smart air travel assistant for Sri Lankan travelers using Flutter, and Firebase with flight tracking, document upload, and transport assist.",
+      techStack: ["Flutter", "Firebase", "Google Maps API", "REST API"],
       image: "/Jetsetgo.png",
       link: "https://github.com/CREW-72/jet-set-go"
     },
     {
       title: "Marketing Website of JetSetGo",
       description: "Designed and developed the marketing website for the smart air travel assistant app using React, TypeScript, and Tailwind CSS.",
+      techStack: ["React", "TypeScript", "Tailwind CSS", "Vite"],
       image: "/website.png",
       link: "https://jetsetgo-kappa.vercel.app/"
     },
     {
       title: "Company Website of IOT Solutions Pvt Ltd",
       description: "Contributed to designing the company website using Figma, developed the frontend with React and frameworks.",
+      techStack: ["React", "Figma", "Tailwind CSS", "Framer Motion"],
       image: "/iot.png",
       link: "https://www.figma.com/proto/Gj5CGm5XqKseW444OG2Ugf/IOT-Web"
     },
     {
       title: "Real-Time Ticketing System",
       description: "Developed a Real-Time Event Ticketing System with a producer-consumer model, using React and Node.js.",
+      techStack: ["React", "Node.js", "WebSocket"],
       image: "/ticketing.jpg",
       link: "https://github.com/piyumigunasekara03/ticketing-system.git"
     },
     {
       title: "Plane Seat Management System",
       description: "Developed a Java-based seat reservation system for a private plane using arrays and OOP.",
+      techStack: ["Java", "JavaFX"],
       image: "/codinggirl.jpg",
       link: "#"
     },
     {
       title: "University Progression Prediction",
       description: "Developed a Python model to predict student progression using credit inputs and data visualization.",
+      techStack: ["Python", "NumPy", "Matplotlib"],
       image: "/girl.webp",
       link: "#"
     }
@@ -58,6 +64,18 @@ const Projects = () => {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{project.title}</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+                <div className="mb-4">
+                  <div className="flex flex-wrap gap-2">
+                    {project.techStack.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="px-2 py-1 text-sm bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
                 <a
                   href={project.link}
                   className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors"
