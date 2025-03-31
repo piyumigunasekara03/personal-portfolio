@@ -24,7 +24,8 @@ const Header = () => {
                 download
                 className="inline-flex items-center px-6 py-3 bg-purple-600 dark:bg-purple-500 text-white rounded-lg hover:bg-purple-700 dark:hover:bg-purple-600 transition-colors shadow-lg hover:shadow-xl"
               >
-                Download Resume
+                Download Resume 
+                
               </a>
             </div>
           </div>
